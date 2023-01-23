@@ -10,7 +10,10 @@ function QuestionResult({ answer, correctAnswer, justification }) {
     setIncorrectAwnsers,
   } = useContext(ExamContext);
 
-  var [answerResult, setAnswerResult] = useState();
+  var [answerResult, setAnswerResult] = useState({
+    color: "green",
+    icon: "thumbs up",
+  });
 
   useEffect(() => {
     const errorAwnserSetup = { color: "red", icon: "thumbs down" };

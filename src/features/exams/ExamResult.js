@@ -9,7 +9,12 @@ function ExamResult({ examId }) {
   const { correctAwnsers, incorrectAwnsers, total, passMark } =
     useContext(ExamContext);
 
-  var [examOutcome, setExamOutcome] = useState();
+  var [examOutcome, setExamOutcome] = useState({
+    color: "green",
+    icon: "thumbs up",
+    success: true,
+    message: "You've passed, congratulations!",
+  });
   const [score, setScore] = useState(0);
   const [state, setState] = useState({
     series: [0, 0],

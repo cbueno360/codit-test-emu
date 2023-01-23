@@ -20,7 +20,6 @@ function QuestionCard({
   const navigate = useNavigate();
 
   const handleChange = (event, { value }) => {
-    console.log(value);
     setUserAnswerTemporary(value);
   };
 
