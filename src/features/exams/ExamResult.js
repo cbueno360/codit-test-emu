@@ -9,20 +9,7 @@ function ExamResult({ examId }) {
   const { correctAwnsers, incorrectAwnsers, total, passMark } =
     useContext(ExamContext);
 
-  const resultFail = {
-    color: "red",
-    icon: "thumbs down",
-    success: false,
-    message: "Sorry! You've failed. Try it again!",
-  };
-  const resultSuccess = {
-    color: "green",
-    icon: "thumbs up",
-    success: true,
-    message: "You've passed, congratulations!",
-  };
-
-  var [examOutcome, setExamOutcome] = useState(resultSuccess);
+  var [examOutcome, setExamOutcome] = useState();
   const [score, setScore] = useState(0);
   const [state, setState] = useState({
     series: [0, 0],
@@ -49,6 +36,19 @@ function ExamResult({ examId }) {
   });
 
   useEffect(() => {
+    const resultFail = {
+      color: "red",
+      icon: "thumbs down",
+      success: false,
+      message: "Sorry! You've failed. Try it again!",
+    };
+    const resultSuccess = {
+      color: "green",
+      icon: "thumbs up",
+      success: true,
+      message: "You've passed, congratulations!",
+    };
+
     let calculdatedScore = (1000 / total) * correctAwnsers;
     setScore(calculdatedScore);
 
@@ -81,15 +81,7 @@ function ExamResult({ examId }) {
         ],
       },
     });
-  }, [
-    correctAwnsers,
-    incorrectAwnsers,
-    passMark,
-    resultFail,
-    resultSuccess,
-    score,
-    total,
-  ]);
+  }, [correctAwnsers, incorrectAwnsers, passMark, score, total]);
 
   return (
     <>

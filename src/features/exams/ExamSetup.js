@@ -26,7 +26,13 @@ function ExamSetup({ totalMax }) {
     setCorrectAwnsers(0);
     setIncorrectAwnsers(0);
     setStarted(false);
-  }, []);
+  }, [
+    setTotal,
+    setQuestionNumber,
+    setCorrectAwnsers,
+    setIncorrectAwnsers,
+    setStarted,
+  ]);
 
   const handleTotalChange = (event) => {
     setTotal(event.target.value);

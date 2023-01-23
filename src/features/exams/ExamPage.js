@@ -58,7 +58,7 @@ function ExamPage() {
       setQuestions(response.data);
       setStarted(true);
     });
-  }, [setStarted, setStarted, id]);
+  }, [setStarted, setQuestions, id]);
 
   useEffect(() => {
     if (questionNumberId) setQuestionNumber(questionNumberId);

@@ -3,8 +3,6 @@ import { ExamContext } from "../../context";
 import { useContext, useEffect, useState } from "react";
 
 function QuestionResult({ answer, correctAnswer, justification }) {
-  const errorAwnserSetup = { color: "red", icon: "thumbs down" };
-  const correctAwnserSetup = { color: "green", icon: "thumbs up" };
   const {
     correctAwnsers,
     setCorrectAwnsers,
@@ -12,9 +10,12 @@ function QuestionResult({ answer, correctAnswer, justification }) {
     setIncorrectAwnsers,
   } = useContext(ExamContext);
 
-  var [answerResult, setAnswerResult] = useState(correctAwnserSetup);
+  var [answerResult, setAnswerResult] = useState();
 
   useEffect(() => {
+    const errorAwnserSetup = { color: "red", icon: "thumbs down" };
+    const correctAwnserSetup = { color: "green", icon: "thumbs up" };
+
     if (answer.toLowerCase() === correctAnswer.toLowerCase()) {
       setCorrectAwnsers(correctAwnsers + 1);
       setAnswerResult(correctAwnserSetup);
@@ -22,7 +23,14 @@ function QuestionResult({ answer, correctAnswer, justification }) {
       setIncorrectAwnsers(incorrectAwnsers + 1);
       setAnswerResult(errorAwnserSetup);
     }
-  }, []);
+  }, [
+    answer,
+    correctAnswer,
+    correctAwnsers,
+    incorrectAwnsers,
+    setCorrectAwnsers,
+    setIncorrectAwnsers,
+  ]);
 
   return (
     <>
