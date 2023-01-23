@@ -1,10 +1,9 @@
-import logo from "./../logo.svg";
 import "./App.css";
 import ExamPage from "../features/exams/ExamPage";
 import { Container } from "semantic-ui-react";
 import NavBar from "./NavBar";
 import { ToastContainer } from "react-toastify";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import ExamDashboard from "../features/exams/ExamDashboard";
 import { ExamContext } from "../context";
 import { useState } from "react";

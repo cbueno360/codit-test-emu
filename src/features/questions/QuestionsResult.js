@@ -1,11 +1,4 @@
-import {
-  Grid,
-  Segment,
-  Card,
-  Icon,
-  Container,
-  Header,
-} from "semantic-ui-react";
+import { Grid, Segment, Card, Icon, Header } from "semantic-ui-react";
 import { ExamContext } from "../../context";
 import { useContext, useEffect, useState } from "react";
 

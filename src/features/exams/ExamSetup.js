@@ -1,4 +1,4 @@
-import { Button, Input, Message, Form, Header, Label } from "semantic-ui-react";
+import { Button, Input, Message, Form, Header } from "semantic-ui-react";
 import { useNavigate } from "react-router-dom";
 import { ExamContext } from "../../context";
 import { useContext, useEffect } from "react";

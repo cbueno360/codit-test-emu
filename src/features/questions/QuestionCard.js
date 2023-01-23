@@ -14,7 +14,7 @@ function QuestionCard({
 }) {
   var [userAnswer, setuserAnswer] = useState();
   const [userAnswerTemporary, setUserAnswerTemporary] = useState(null);
-  const [renderAnswers, setRenderAnswers] = useState(null);
+  // const [renderAnswers, setRenderAnswers] = useState(null);
   const [answered, setAnswered] = useState(false);
 
   const navigate = useNavigate();

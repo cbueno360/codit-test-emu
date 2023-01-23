@@ -81,7 +81,15 @@ function ExamResult({ examId }) {
         ],
       },
     });
-  }, []);
+  }, [
+    correctAwnsers,
+    incorrectAwnsers,
+    passMark,
+    resultFail,
+    resultSuccess,
+    score,
+    total,
+  ]);
 
   return (
     <>

@@ -9,7 +9,7 @@ import ExamResult from "./ExamResult";
 import axios from "axios";
 
 function ExamPage() {
-  const [exams, setExames] = useState([{ name: "", total: "", id: "" }]);
+  //const [exams, setExames] = useState([{ name: "", total: "", id: "" }]);
   let { id, questionNumberId } = useParams();
 
   const { setQuestionNumber, total, started, setStarted } =
@@ -58,15 +58,15 @@ function ExamPage() {
       setQuestions(response.data);
       setStarted(true);
     });
-  }, [setExames]);
+  }, [setExames, id]);
 
   useEffect(() => {
     if (questionNumberId) setQuestionNumber(questionNumberId);
-  }, [questionNumberId]);
+  }, [questionNumberId, setQuestionNumber]);
 
   useEffect(() => {
     if (started) setStarted(started);
-  }, [started]);
+  }, [started, setStarted]);
 
   return (
     <>

@@ -10,7 +10,7 @@ function ExamHeader({ examId, examName, totalQuestions }) {
     let actualQuestion = parseInt(questionNumber, 10);
     let totalQuestions = parseInt(total);
     setExamPercent((100 / totalQuestions) * (actualQuestion - 1));
-  }, [examPercent, setExamPercent, questionNumber]);
+  }, [examPercent, setExamPercent, questionNumber,total);
 
   return (
     <div>
