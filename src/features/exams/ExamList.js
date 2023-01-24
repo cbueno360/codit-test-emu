@@ -27,7 +27,7 @@ function ExamList() {
             <>
               <Table.Row>
                 <Table.Cell>
-                  <Link to={`/exams/${exam.id}`}>{exam.id}</Link>
+                  <Link to={`/dashboard/exams/${exam.id}`}>{exam.id}</Link>
                 </Table.Cell>
                 <Table.Cell>{exam.name}</Table.Cell>
                 <Table.Cell>{exam.total}</Table.Cell>

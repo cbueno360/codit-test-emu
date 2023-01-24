@@ -1,7 +1,8 @@
 import { Button, Input, Message, Form, Header } from "semantic-ui-react";
 import { useNavigate } from "react-router-dom";
-import { ExamContext } from "../../context";
-import { useContext, useEffect } from "react";
+import { useExam } from "../../hooks/useExam";
+import { useEffect } from "react";
+
 function ExamSetup({ totalMax }) {
   const navigate = useNavigate();
   const {
@@ -13,7 +14,7 @@ function ExamSetup({ totalMax }) {
     setIncorrectAwnsers,
     setQuestionNumber,
     setPassMark,
-  } = useContext(ExamContext);
+  } = useExam();
 
   const startExam = () => {
     setStarted(true);

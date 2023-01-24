@@ -1,19 +1,17 @@
-import QuestionCard from "../questions/QuestionCard";
+import QuestionCard from "../features/questions/QuestionCard";
 import { Container, Grid, Segment } from "semantic-ui-react";
 import { useParams } from "react-router-dom";
 import { useContext, useState, useEffect } from "react";
-import ExamSetup from "./ExamSetup";
-import { ExamContext } from "../../context";
-import ExamHeader from "./ExamHeader";
-import ExamResult from "./ExamResult";
+import ExamSetup from "../features/exams/ExamSetup";
+import ExamHeader from "../features/exams/ExamHeader";
+import ExamResult from "../features/exams/ExamResult";
 import axios from "axios";
+import { useExam } from "../hooks/useExam";
 
-function ExamPage() {
-  //const [exams, setExames] = useState([{ name: "", total: "", id: "" }]);
+export const ExamPage = () => {
   let { id, questionNumberId } = useParams();
 
-  const { setQuestionNumber, total, started, setStarted } =
-    useContext(ExamContext);
+  const { setQuestionNumber, total, started, setStarted } = useExam();
 
   const [questions, setQuestions] = useState([
     {
@@ -97,6 +95,4 @@ function ExamPage() {
       )}
     </>
   );
-}
-
-export default ExamPage;
+};

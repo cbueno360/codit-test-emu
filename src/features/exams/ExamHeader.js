@@ -1,10 +1,11 @@
 import { Header, Statistic, Progress } from "semantic-ui-react";
-import { ExamContext } from "../../context";
-import { useContext, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { useExam } from "../../hooks/useExam";
 
 function ExamHeader({ examId, examName, totalQuestions }) {
   const [examPercent, setExamPercent] = useState(0);
-  const { total, questionNumber } = useContext(ExamContext);
+
+  const { total, questionNumber } = useExam();
 
   useEffect(() => {
     let actualQuestion = parseInt(questionNumber, 10);

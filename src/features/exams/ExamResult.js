@@ -1,13 +1,12 @@
 import { Button, Header, Card, Icon, Statistic } from "semantic-ui-react";
 import Chart from "react-apexcharts";
-import { ExamContext } from "../../context";
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useExam } from "../../hooks/useExam";
 
 function ExamResult({ examId }) {
   const navigate = useNavigate();
-  const { correctAwnsers, incorrectAwnsers, total, passMark } =
-    useContext(ExamContext);
+  const { correctAwnsers, incorrectAwnsers, total, passMark } = useExam();
 
   var [examOutcome, setExamOutcome] = useState({
     color: "green",
@@ -55,7 +54,7 @@ function ExamResult({ examId }) {
     };
 
     let calculdatedScore = (1000 / total) * correctAwnsers;
-    setScore(calculdatedScore);
+    setScore(Math.trunc(calculdatedScore));
 
     if (score >= passMark) {
       setExamOutcome(resultSuccess);
@@ -127,7 +126,7 @@ function ExamResult({ examId }) {
             id="btn_id"
             basic
             color="blue"
-            onClick={() => navigate("/exams")}
+            onClick={() => navigate("/dashboard/exams/" + { examId } + "/1")}
           >
             Replay
           </Button>
@@ -135,7 +134,7 @@ function ExamResult({ examId }) {
             id="btn_id"
             basic
             color="green"
-            onClick={() => navigate("/exams")}
+            onClick={() => navigate("/dashboard/exams")}
           >
             Start new Exam
           </Button>

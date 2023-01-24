@@ -14,7 +14,6 @@ function QuestionCard({
 }) {
   var [userAnswer, setuserAnswer] = useState();
   const [userAnswerTemporary, setUserAnswerTemporary] = useState(null);
-  // const [renderAnswers, setRenderAnswers] = useState(null);
   const [answered, setAnswered] = useState(false);
 
   const navigate = useNavigate();
@@ -26,7 +25,7 @@ function QuestionCard({
   const nextQuestion = (answer) => {
     let intQuestionNumber = parseInt(questionNumber, 10);
     let result = intQuestionNumber + 1;
-    var urlTmp = "/exams/AZ-900-01/" + result;
+    var urlTmp = "/dashboard/exams/AZ-900-01/" + result;
     setAnswered(false);
     setuserAnswer();
     setUserAnswerTemporary(null);

@@ -1,6 +1,6 @@
 import { Grid, Segment, Card, Icon, Header } from "semantic-ui-react";
-import { ExamContext } from "../../context";
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { useExam } from "../../hooks/useExam";
 
 function QuestionResult({ answer, correctAnswer, justification }) {
   const {
@@ -8,7 +8,7 @@ function QuestionResult({ answer, correctAnswer, justification }) {
     setCorrectAwnsers,
     incorrectAwnsers,
     setIncorrectAwnsers,
-  } = useContext(ExamContext);
+  } = useExam();
 
   var [answerResult, setAnswerResult] = useState({
     color: "green",
@@ -18,22 +18,14 @@ function QuestionResult({ answer, correctAnswer, justification }) {
   useEffect(() => {
     const errorAwnserSetup = { color: "red", icon: "thumbs down" };
     const correctAwnserSetup = { color: "green", icon: "thumbs up" };
-
     if (answer.toLowerCase() === correctAnswer.toLowerCase()) {
-      setCorrectAwnsers(correctAwnsers + 1);
+      setCorrectAwnsers(+correctAwnsers + 1);
       setAnswerResult(correctAwnserSetup);
     } else {
-      setIncorrectAwnsers(incorrectAwnsers + 1);
+      setIncorrectAwnsers(+incorrectAwnsers + 1);
       setAnswerResult(errorAwnserSetup);
     }
-  }, [
-    answer,
-    correctAnswer,
-    correctAwnsers,
-    incorrectAwnsers,
-    setCorrectAwnsers,
-    setIncorrectAwnsers,
-  ]);
+  }, []);
 
   return (
     <>
