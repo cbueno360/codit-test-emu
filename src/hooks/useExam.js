@@ -1,5 +1,5 @@
 import { createContext, useContext, useMemo, useState } from "react";
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 
 const ExamContext = createContext();
 
@@ -11,19 +11,18 @@ export const ExamProvider = ({ children }) => {
   const [correctAwnsers, setCorrectAwnsers] = useState(0);
   const [incorrectAwnsers, setIncorrectAwnsers] = useState(0);
   const [passMark, setPassMark] = useState(800);
-  const navigate = useNavigate();
+  //   const navigate = useNavigate();
 
-  const newExam = async () => {
-    setTotal(0);
-    setQuestionNumber(0);
-    setCorrectAwnsers(0);
-    setIncorrectAwnsers(0);
-    navigate("/dashboard/exams", { replace: true });
-  };
+  //   const newExam = async () => {
+  //     setTotal(0);
+  //     setQuestionNumber(0);
+  //     setCorrectAwnsers(0);
+  //     setIncorrectAwnsers(0);
+  //     navigate("/dashboard/exams", { replace: true });
+  //   };
 
   const value = useMemo(
     () => ({
-      newExam,
       total,
       setTotal,
       questionNumber,
@@ -40,7 +39,6 @@ export const ExamProvider = ({ children }) => {
       setTotalMax,
     }),
     [
-      newExam,
       total,
       setTotal,
       questionNumber,
