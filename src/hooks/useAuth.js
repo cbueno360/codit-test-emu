@@ -24,8 +24,8 @@ export const AuthProvider = ({ children, userData }) => {
       login,
       logout,
     }),
-    [user]
-  );
+    [user] // eslint-disable-line react-hooks/exhaustive-deps
+  ); // eslint-disable-line react-hooks/exhaustive-deps
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 };

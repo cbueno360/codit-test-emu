@@ -55,8 +55,8 @@ export const ExamProvider = ({ children }) => {
       setPassMark,
       totalMax,
       setTotalMax,
-    ]
-  );
+    ] // eslint-disable-line react-hooks/exhaustive-deps
+  ); // eslint-disable-line react-hooks/exhaustive-deps
 
   return <ExamContext.Provider value={value}>{children}</ExamContext.Provider>;
 };

@@ -25,7 +25,7 @@ function QuestionResult({ answer, correctAnswer, justification }) {
       setIncorrectAwnsers(+incorrectAwnsers + 1);
       setAnswerResult(errorAwnserSetup);
     }
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <>
