@@ -10,15 +10,6 @@ import { MicrosoftLoginButton } from "react-social-login-buttons";
 export const LoginPage = () => {
   const { login } = useAuth();
 
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   const data = new FormData(event.currentTarget);
-  //   login({
-  //     email: data.get("email"),
-  //     password: data.get("password"),
-  //   });
-  // };
-
   return (
     <Container component="main" maxWidth="xs">
       <Box

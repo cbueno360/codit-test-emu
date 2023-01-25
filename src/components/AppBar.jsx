@@ -13,12 +13,13 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../hooks/useAuth";
+import { useMsal } from "@azure/msal-react";
 
 export const AppBar = ({ pages }) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const navigate = useNavigate();
   const { isAuthenticated, logout } = useAuth();
-
+  const { accounts } = useMsal();
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -42,7 +43,6 @@ export const AppBar = ({ pages }) => {
           >
             Codit Exam Test
           </Typography>
-
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -82,19 +82,14 @@ export const AppBar = ({ pages }) => {
               ))}
               {!!isAuthenticated && (
                 <MenuItem key={"logout"} onClick={logout}>
-                  <Typography textAlign="center">Logout</Typography>
+                  <Typography textAlign="center">
+                    {" "}
+                    {accounts[0].username}
+                  </Typography>
                 </MenuItem>
               )}
             </Menu>
           </Box>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
-          >
-            Codit Exam Test
-          </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages?.map((page) => (
               <Button
@@ -112,6 +107,16 @@ export const AppBar = ({ pages }) => {
                 sx={{ my: 2, color: "white", display: "block" }}
               >
                 {"logout"}
+              </Button>
+            )}
+          </Box>
+          <Box>
+            {!!isAuthenticated && (
+              <Button
+                key={"user"}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                Hello, {accounts[0].name}
               </Button>
             )}
           </Box>

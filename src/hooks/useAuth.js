@@ -9,14 +9,23 @@ const AuthContext = createContext();
 export const AuthProvider = ({ children, userData }) => {
   const [user, setUser] = useLocalStorage("user", userData);
   const isAuthenticated = useIsAuthenticated();
-  const { instance } = useMsal();
+  const { instance, accounts } = useMsal();
 
   const navigate = useNavigate();
 
   const login = async () => {
-    instance.loginRedirect(loginRequest).catch((e) => {
-      console.log(e);
-    });
+    instance
+      .loginRedirect(loginRequest)
+      .then((result) => {
+        console.log(result);
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+
+    console.log(accounts);
+
+    setUser(accounts[0]);
     navigate("/dashboard/exams", { replace: true });
   };
 
@@ -32,10 +41,11 @@ export const AuthProvider = ({ children, userData }) => {
     () => ({
       isAuthenticated,
       user,
+      setUser,
       login,
       logout,
     }),
-    [user] // eslint-disable-line react-hooks/exhaustive-deps
+    [user, setUser] // eslint-disable-line react-hooks/exhaustive-deps
   ); // eslint-disable-line react-hooks/exhaustive-deps
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
