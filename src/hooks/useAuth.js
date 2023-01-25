@@ -1,25 +1,36 @@
 import { createContext, useContext, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import { useLocalStorage } from "./useLocalStorage";
+import { useIsAuthenticated, useMsal } from "@azure/msal-react";
+import { loginRequest } from "../authConfig";
 
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children, userData }) => {
   const [user, setUser] = useLocalStorage("user", userData);
+  const isAuthenticated = useIsAuthenticated();
+  const { instance } = useMsal();
+
   const navigate = useNavigate();
 
-  const login = async (data) => {
-    setUser(data);
+  const login = async () => {
+    instance.loginRedirect(loginRequest).catch((e) => {
+      console.log(e);
+    });
     navigate("/dashboard/exams", { replace: true });
   };
 
   const logout = () => {
     setUser(null);
-    navigate("/", { replace: true });
+    instance.logoutPopup({
+      postLogoutRedirectUri: "/",
+      mainWindowRedirectUri: "/", // redirects the top level app after logout
+    });
   };
 
   const value = useMemo(
     () => ({
+      isAuthenticated,
       user,
       login,
       logout,

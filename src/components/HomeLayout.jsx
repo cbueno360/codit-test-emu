@@ -3,10 +3,10 @@ import { useAuth } from "../hooks/useAuth";
 import { AppBar } from "./AppBar";
 
 export const HomeLayout = () => {
-  const { user } = useAuth();
+  const { isAuthenticated } = useAuth();
   const outlet = useOutlet();
 
-  if (user) {
+  if (isAuthenticated) {
     return <Navigate to="/dashboard/exams" replace />;
   }
 
