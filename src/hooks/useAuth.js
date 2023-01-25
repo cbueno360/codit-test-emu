@@ -22,9 +22,6 @@ export const AuthProvider = ({ children, userData }) => {
       .catch((e) => {
         console.log(e);
       });
-
-    console.log(accounts);
-
     setUser(accounts[0]);
     navigate("/dashboard/exams", { replace: true });
   };

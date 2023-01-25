@@ -14,7 +14,7 @@ const msalConfig = {
     clientId: "cf8c9a91-e498-41ea-a8af-192339f78805",
     authority:
       "https://login.microsoftonline.com/5f980b41-5556-4826-bff2-56b564879886", // This is a URL (e.g. https://login.microsoftonline.com/{your tenant ID})
-    redirectUri: "http://localhost:3000/",
+    redirectUri: "https://codit-exam-test.azurewebsites.net/",
   },
   cache: {
     cacheLocation: "sessionStorage", // This configures where your cache will be stored
