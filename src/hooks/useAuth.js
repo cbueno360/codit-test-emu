@@ -14,14 +14,9 @@ export const AuthProvider = ({ children, userData }) => {
   const navigate = useNavigate();
 
   const login = async () => {
-    instance
-      .loginRedirect(loginRequest)
-      .then((result) => {
-        console.log(result);
-      })
-      .catch((e) => {
-        console.log(e);
-      });
+    instance.loginRedirect(loginRequest).catch((e) => {
+      console.log(e);
+    });
     setUser(accounts[0]);
     navigate("/dashboard/exams", { replace: true });
   };
