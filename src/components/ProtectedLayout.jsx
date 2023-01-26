@@ -3,9 +3,8 @@ import { useAuth } from "../hooks/useAuth";
 import { AppBar } from "./AppBar";
 
 export const ProtectedLayout = () => {
-  const { isAuthenticated } = useAuth();
+  const { isAuthenticated, accessToken } = useAuth();
   const outlet = useOutlet();
-
   if (!isAuthenticated) {
     return <Navigate to="/" />;
   }

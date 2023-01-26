@@ -5,8 +5,8 @@ import { useState, useEffect } from "react";
 import ExamSetup from "../features/exams/ExamSetup";
 import ExamHeader from "../features/exams/ExamHeader";
 import ExamResult from "../features/exams/ExamResult";
-import axios from "axios";
 import { useExam } from "../hooks/useExam";
+import { useQuestionService } from "../hooks/useQuestionService";
 
 export const ExamPage = () => {
   let { id, questionNumberId } = useParams();
@@ -46,14 +46,15 @@ export const ExamPage = () => {
           correctAnswer={questions[questionNumberId - 1].correctAnswer}
           justification={questions[questionNumberId - 1].justification}
           questionNumber={questionNumberId}
+          id={id}
         />
       </Container>
     );
-
+  const [questionService] = useQuestionService();
   useEffect(() => {
-    let urlExam = "/api/data/exam-" + id + ".json";
-    axios.get(urlExam).then((response) => {
-      setQuestions(response.data);
+    questionService.getAllByExamId(id).then((response) => {
+      console.log(response);
+      setQuestions(response.questions);
       setStarted(true);
     });
   }, [setStarted, setQuestions, id]);
@@ -80,7 +81,8 @@ export const ExamPage = () => {
                 <Segment>
                   <ExamHeader
                     examId={id}
-                    totalQuestions={questions.length ?? 0}
+                    totalQuestions={0}
+                    // {questions.length ?? 0}
                   />
                 </Segment>
               </Grid.Column>

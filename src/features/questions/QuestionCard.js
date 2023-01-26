@@ -10,7 +10,7 @@ function QuestionCard({
   correctAnswer,
   justification,
   questionNumber,
-  url,
+  id,
 }) {
   var [userAnswer, setuserAnswer] = useState();
   const [userAnswerTemporary, setUserAnswerTemporary] = useState(null);
@@ -25,7 +25,7 @@ function QuestionCard({
   const nextQuestion = (answer) => {
     let intQuestionNumber = parseInt(questionNumber, 10);
     let result = intQuestionNumber + 1;
-    var urlTmp = "/dashboard/exams/AZ-900-01/" + result;
+    var urlTmp = "/dashboard/exams/" + id + "/" + result;
     setAnswered(false);
     setuserAnswer();
     setUserAnswerTemporary(null);

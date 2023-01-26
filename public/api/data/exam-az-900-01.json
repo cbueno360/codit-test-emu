@@ -1,503 +1,58 @@
 [
   {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
+    "id": "exam-az-900-01",
+    "name": "AZ-900",
+    "created_at": "",
+    "updated_at": "",
+    "questions": [
       {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
+        "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
+        "answers": [
+          {
+            "label": "Multi-factor authentication (MFA)",
+            "value": "multi-factor authentication (MFA)"
+          },
+          { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
+          { "label": "Administrative units", "value": "administrative units" },
+          { "label": "Conditional Access", "value": "Conditional Access" }
+        ],
+        "type": "single_answer",
+        "image": "",
+        "correctAnswer": "Administrative units",
+        "justification": "Blah blah blah"
       },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Select the answer that correctly completes the sentence. Single sign-on (SSO) is __________ method that enables users to sign in the first time and access various applications and resource by using same password.",
-    "answers": [
-      { "label": "A validation", "value": "A validation" },
-      { "label": "An authentication", "value": "An authentication" },
-      { "label": "A configuration", "value": "A configuration" },
-      { "label": "An authorizations", "value": "An authorizations" }
-    ],
-    "correctAnswer": "An authentication",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
       {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
+        "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
+        "answers": [
+          {
+            "label": "Multi-factor authentication (MFA)",
+            "value": "multi-factor authentication (MFA)"
+          },
+          { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
+          { "label": "Administrative units", "value": "administrative units" },
+          { "label": "Conditional Access", "value": "Conditional Access" }
+        ],
+        "type": "single_answer",
+        "image": "",
+        "correctAnswer": "Administrative units",
+        "justification": "Blah blah blah"
       },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
       {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
-  },
-  {
-    "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
-    "answers": [
-      {
-        "label": "Multi-factor authentication (MFA)",
-        "value": "multi-factor authentication (MFA)"
-      },
-      { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
-      { "label": "Administrative units", "value": "administrative units" },
-      { "label": "Conditional Access", "value": "Conditional Access" }
-    ],
-    "correctAnswer": "Administrative units",
-    "justification": "Blah blah blah"
+        "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
+        "answers": [
+          {
+            "label": "Multi-factor authentication (MFA)",
+            "value": "multi-factor authentication (MFA)"
+          },
+          { "label": "Single sign-on (SSO)", "value": "single sign-on (SSO)" },
+          { "label": "Administrative units", "value": "administrative units" },
+          { "label": "Conditional Access", "value": "Conditional Access" }
+        ],
+        "type": "single_answer",
+        "image": "",
+        "correctAnswer": "Administrative units",
+        "justification": "Blah blah blah"
+      }
+    ]
   }
 ]

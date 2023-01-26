@@ -1,13 +1,18 @@
 import { useState, useEffect } from "react";
 import { Icon, Menu, Table } from "semantic-ui-react";
 import { Link } from "react-router-dom";
-import axios from "axios";
+import { useExamService } from "../../hooks/useExamService";
+import { useAuth } from "../../hooks/useAuth";
 
 function ExamList() {
+  const { getToken, accessToken } = useAuth();
+  const [examService] = useExamService();
   const [exams, setExames] = useState([{ name: "", total: "", id: "" }]);
   useEffect(() => {
-    axios.get("/api/data/exams.json").then((response) => {
-      setExames(response.data);
+    getToken().then(() => {
+      examService.getAll().then((response) => {
+        setExames(response);
+      });
     });
   }, [setExames]);
 
