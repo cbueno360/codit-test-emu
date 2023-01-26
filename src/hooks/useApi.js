@@ -7,6 +7,7 @@ export const useApi = () => {
   const { accessToken } = useAuth();
 
   axios.interceptors.request.use((config) => {
+    config.baseURL = "https://codit-exam-test-api.azurewebsites.net";
     console.log(accessToken);
     //   const token = {token-from-azure-if-it-is-necessary};
     if (accessToken && config.headers)
