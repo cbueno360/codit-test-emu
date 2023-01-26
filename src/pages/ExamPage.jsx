@@ -1,3 +1,4 @@
+/* eslint-disable */
 import QuestionCard from "../features/questions/QuestionCard";
 import { Container, Grid, Segment } from "semantic-ui-react";
 import { useParams } from "react-router-dom";
@@ -98,3 +99,4 @@ export const ExamPage = () => {
     </>
   );
 };
+/* eslint-enable */

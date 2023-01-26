@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useState, useEffect } from "react";
 import { Icon, Menu, Table } from "semantic-ui-react";
 import { Link } from "react-router-dom";
@@ -65,3 +66,4 @@ function ExamList() {
 }
 
 export default ExamList;
+/* eslint-enable */

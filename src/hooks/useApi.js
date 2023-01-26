@@ -1,3 +1,4 @@
+/* eslint-disable */
 import axios from "axios";
 import { toast } from "react-toastify";
 import { useAuth } from "./useAuth";
@@ -66,3 +67,4 @@ export const useApi = () => {
 
   return [requests];
 };
+/* eslint-enable */

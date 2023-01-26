@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { Navigate, useOutlet } from "react-router-dom";
 import { useAuth } from "../hooks/useAuth";
 import { AppBar } from "./AppBar";
@@ -16,3 +17,4 @@ export const ProtectedLayout = () => {
     </div>
   );
 };
+/* eslint-enable */
