@@ -7,8 +7,8 @@ export const useExamService = () => {
     create: (exams) => requests.post("/api/GreateExam", exams),
     getAll: () =>
       requests.get(
-        "/api/GetExams",
-        "83-v75NS2LcLeDcoqt16frxr0gSoeHQEy35aIFIYDOZOAzFu8ujp3g=="
+        "/api/Exams",
+        "RuxUOy82WoGlTV7pI0VtFdfF9V580XmusaPuzysyh5JQAzFuyVzODw=="
       ),
   };
   return [examService];
